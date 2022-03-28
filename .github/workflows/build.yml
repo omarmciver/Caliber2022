@@ -25,7 +25,7 @@ jobs:
         with:
           registry: omar10m.azurecr.io
           username: omar10m
-          password: ${{ secrets.10M_ACR_PWD }}
+          password: ${{ secrets.ACR_PWD_10M }}
 
       - uses: actions/checkout@v2
 
