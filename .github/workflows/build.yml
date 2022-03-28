@@ -34,4 +34,4 @@ jobs:
         with:
           file: Dockerfile
           push: true
-          tags: omar10m.azurecr.io/caliber2022demo:${{github.run_number}}
+          tags: omar10m.azurecr.io/caliber2022demo:${{github.run_number}},omar10m.azurecr.io/caliber2022demo:latest

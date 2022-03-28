@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: caliber2022demo
+  labels:
+    app: caliber2022demo
+spec:
+  type: LoadBalancer
+  ports:
+  - protocol: TCP
+    port: 5000
+  selector:
+    app: caliber2022demo
