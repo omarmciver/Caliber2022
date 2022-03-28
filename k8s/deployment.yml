@@ -22,3 +22,5 @@ spec:
           requests:
             memory: "256Mi"
             cpu: "0.5"
+      imagePullSecrets:
+      - name: 10m-acr-secret
