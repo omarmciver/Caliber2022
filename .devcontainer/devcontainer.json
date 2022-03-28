@@ -1,0 +1,21 @@
+// See https://aka.ms/vscode-remote/devcontainer.json
+{
+  "name": "Caliber 2022 Demo",
+  "extensions": [
+    "ms-dotnettools.csharp",
+    "dbaeumer.vscode-eslint",
+    "ms-azuretools.vscode-docker",
+    "redhat.vscode-yaml",
+    "me-dutour-mathieu.vscode-github-actions",
+    "davidanson.vscode-markdownlint"
+  ],
+  "forwardPorts": [5000],
+  // The user to run as in the container
+  "remoteUser": "vscode",
+  // The folder VSCode engine in the container should open
+  "workspaceFolder": "/code/",
+  // ######### DOCKER COMPOSE #############
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "caliber2022",
+  "postStartCommand": "sudo rm -rf **/bin && sudo rm -rf **/obj"
+}
