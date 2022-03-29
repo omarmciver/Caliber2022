@@ -14,13 +14,13 @@ spec:
     spec:
       containers:
       - name: caliber2022demo
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         image: omar10m.azurecr.io/caliber2022demo:latest
         ports:
         - containerPort: 5000
         resources:
           requests:
-            memory: "256Mi"
-            cpu: "0.5"
+            memory: "128Mi"
+            cpu: "1"
       imagePullSecrets:
       - name: 10m-acr-secret
