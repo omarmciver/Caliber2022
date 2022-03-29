@@ -37,7 +37,7 @@ namespace api
 
             // === Mine the block (calculate the hash)
             _logger.LogInformation($"Mining the block...");
-            await block.MineBlock(proofOfWorkDifficulty: 5, minerName: "Omar McIver");
+            await block.MineBlock(proofOfWorkDifficulty: 5, minerName: Environment.MachineName);
 
             // === Discover what the hash was and return it
             var mineDetails = $"{block.Miner} mined {block.Records.Count} records in {block.TimeToMine.TotalSeconds} seconds. Hash: {block.Hash}";
